@@ -93,7 +93,8 @@
 
         lock_mac:lock_mac {
           label = "Lock Mac";
-            compatible = "zmk,behavior-macro";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
           bindings = <&macro_tap &kp LCTRL &kp LGUI &kp Q>;
         };
     };
