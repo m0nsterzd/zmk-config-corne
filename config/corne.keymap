@@ -20,7 +20,7 @@
 #define SUPER2 LA(LC(LSHIFT))
 
 &mt {
-  tapping-term-ms = <200>;
+  tapping-term-ms = <250>;
   flavor = "tap-preferred";
 };
 
