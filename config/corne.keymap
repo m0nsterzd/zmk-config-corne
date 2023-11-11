@@ -1,3 +1,4 @@
+
 /*
  * Copyright (c) 2020 The ZMK Contributors
  *
@@ -112,12 +113,12 @@
      label = "Colemak";
       bindings = <
 
-xxxxx         &kp Q           &kp W       &kp F       &kp P           &kp G   /**/  &kp J    &kp L           &kp U       &kp Y       &td0       xxxxx
+         &kp Q           &kp W       &kp F       &kp P           &kp G   /**/  &kp J    &kp L           &kp U       &kp Y       &td0       xxxxx
 xxxxx         &kp A           &kp R       &kp S       &hm LSHIFT T    &kp D   /**/  &kp H    &hm RSHIFT N    &kp E       &kp I       &kp O      xxxxx
 xxxxx         &kp Z           &kp X       &kp C       &kp V           &kp B   /**/  &kp K    &kp M           &td2   &kp DOT     &kp FSLH        xxxxx
               &td1  &lt NUM BSPC &mt LGUI SPACE  /**/  &mt RGUI RET &lt SYM DEL &mt RALT GRAVE
 
-      >;,Æƒπƒπ©∑∑çç†√√√†åœß`````
+      >;
     };
 
     num_layer {
@@ -130,7 +131,9 @@ xxxxx         &kp SUPER2    &none         &none         &kp HOME      &kp END   
               &trans  &trans  &trans  /**/  &trans  &mo FUNC  &trans
 
       >;
-    }vt````````````````aaa````````````````````````````````````````````a {
+    };
+
+    sym_layer {
      label = "Symbols";
       bindings = <
 
@@ -155,4 +158,3 @@ xxxxx         &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_NXT &bt BT_
     };
   };
 };
-sssswwrrxxxxsffffsfsssccccccttpwgcqqt
