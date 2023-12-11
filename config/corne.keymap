@@ -57,8 +57,22 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_tap>,
-                <&kp LSHIFT &kp LEFT_CONTROL &kp LEFT_GUI &kp N3>;
+                <&macro_press>,
+                <&kp LSHIFT>,
+                <&macro_press>,
+                <&kp LEFT_CONTROL>,
+                <&macro_press>,
+                <&kp LEFT_GUI>,
+                <&macro_press>,
+                <&kp N3>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT>,
+                <&macro_release>,
+                <&kp LEFT_CONTROL>,
+                <&macro_release>,
+                <&kp LEFT_GUI>,
+                <&macro_release>,
+                <&kp N3>;
 
             label = "SCRN3";
         };
@@ -67,8 +81,22 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_tap>,
-                <&kp LSHIFT &kp LEFT_CONTROL &kp LEFT_GUI &kp N4>;
+                <&macro_press>,
+                <&kp LSHIFT>,
+                <&macro_press>,
+                <&kp LEFT_CONTROL>,
+                <&macro_press>,
+                <&kp LEFT_GUI>,
+                <&macro_press>,
+                <&kp N4>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT>,
+                <&macro_release>,
+                <&kp LEFT_CONTROL>,
+                <&macro_release>,
+                <&kp LEFT_GUI>,
+                <&macro_release>,
+                <&kp N4>;
 
             label = "SCRN4";
         };
@@ -102,7 +130,7 @@
         SYM {
             bindings = <
 &none  &kp EXCL   &kp AT     &kp HASH  &kp DLLR  &kp PRCNT     &kp SQT    &kp AMPS   &kp LPAR  &kp RPAR  &kp KP_MULTIPLY  &none
-&none  &kp GRAVE  &kp TILDE  &none     &none     &none         &kp MINUS  &kp EQUAL  &kp LBRC  &kp RBRC  &kp BSLH         &none
+&none  &kp GRAVE  &kp TILDE  &none     &scrn3    &scrn4        &kp MINUS  &kp EQUAL  &kp LBRC  &kp RBRC  &kp BSLH         &none
 &none  &kp TILDE  &none      &none     &none     &lock_mac     &kp UNDER  &kp PLUS   &kp LBKT  &kp RBKT  &kp PIPE         &none
                              &none     &mo 0     &kp ESCAPE    &none      &none      &none
             >;
