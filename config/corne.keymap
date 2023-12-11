@@ -36,7 +36,19 @@
         lock_mac: lock_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp LCTRL &kp LGUI &kp Q>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_press>,
+                <&kp LGUI>,
+                <&macro_press>,
+                <&kp Q>,
+                <&macro_release>,
+                <&kp LEFT_CONTROL>,
+                <&macro_release>,
+                <&kp LEFT_GUI>,
+                <&macro_release>,
+                <&kp Q>;
 
             label = "LOCK_MAC";
         };
