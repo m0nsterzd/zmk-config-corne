@@ -113,7 +113,7 @@
      label = "Colemak";
       bindings = <
 
-         &kp Q           &kp W       &kp F       &kp P           &kp B   /**/  &kp J    &kp L           &kp U       &kp Y       &td0       xxxxx
+xxxxx         &kp Q           &kp W       &kp F       &kp P           &kp B   /**/  &kp J    &kp L           &kp U       &kp Y       &td0       xxxxx
 xxxxx         &kp A           &kp R       &kp S       &hm LSHIFT T    &kp G   /**/  &kp M    &hm RSHIFT N    &kp E       &kp I       &kp O      xxxxx
 xxxxx         &kp Z           &kp X       &kp C       &kp D           &kp V   /**/  &kp K    &kp H           &td2   &kp DOT     &kp FSLH        xxxxx
               &td1  &lt NUM BSPC &mt LGUI SPACE  /**/  &mt RGUI RET &lt SYM DEL &mt RALT GRAVE
