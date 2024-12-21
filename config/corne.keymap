@@ -118,7 +118,7 @@
         clo: clo {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp C &kp L &kp O &kp RETURN>;
+            bindings = <&kp C &kp L &kp O &macro_wait 100 &kp RETURN>;
             label = "CLO";
         };
     };
