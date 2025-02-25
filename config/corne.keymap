@@ -158,10 +158,10 @@
 
         DEFAULT {
             bindings = <
-&none  &kp Q           &kp W  &kp F        &kp P             &kp B          &kp J      &kp L              &kp U            &kp Y    &kp SEMI  &none
-&none  &hm LEFT_GUI A  &kp R  &kp S        &hm LEFT_SHIFT T  &kp G          &kp M      &hm RIGHT_SHIFT N  &hm RIGHT_GUI E  &kp I    &kp O     &none
-&none  &kp Z           &kp X  &kp C        &kp D             &kp V          &kp K      &kp H              &kp COMMA        &kp DOT  &kp FSLH  &none
-                              &mt ESC TAB  &kp BACKSPACE     &lt 1 SPACE    &lt 2 RET  &lt 3 DEL          &mt RALT GRAVE
+&none  &kp Q           &kp W  &kp F    &kp P             &kp B          &kp J      &kp L              &kp U            &kp Y    &kp SEMI  &none
+&none  &hm LEFT_GUI A  &kp R  &kp S    &hm LEFT_SHIFT T  &kp G          &kp M      &hm RIGHT_SHIFT N  &hm RIGHT_GUI E  &kp I    &kp O     &none
+&none  &kp Z           &kp X  &kp C    &kp D             &kp V          &kp K      &kp H              &kp COMMA        &kp DOT  &kp FSLH  &none
+                              &kp ESC  &kp BACKSPACE     &lt 1 SPACE    &lt 2 RET  &lt 3 TAB          &lt 3 DELETE
             >;
 
             label = "Colemak";
@@ -169,10 +169,10 @@
 
         NUM {
             bindings = <
-&none  &lock_mac  &kp LA(LEFT)  &kp UP    &kp LA(RIGHT)  &kp PG_UP    &kp PLUS   &kp N7     &kp N8  &kp N9  &kp KP_MULTIPLY  &none
-&none  &scrn3     &kp LEFT      &kp DOWN  &kp RIGHT      &kp PG_DN    &kp MINUS  &kp N4     &kp N5  &kp N6  &kp SLASH        &none
-&none  &scrn4     &none         &none     &kp HOME       &kp END      &kp N0     &kp N1     &kp N2  &kp N3  &kp DOT          &none
-                                &none     &none          &none        &kp RET    &kp EQUAL  &mo 4
+&none  &kp ESCAPE  &kp LA(LEFT)  &kp UP    &kp LA(RIGHT)  &kp PG_UP    &kp PLUS   &kp N7     &kp N8  &kp N9  &kp KP_MULTIPLY  &none
+&none  &lock_mac   &kp LEFT      &kp DOWN  &kp RIGHT      &kp PG_DN    &kp MINUS  &kp N4     &kp N5  &kp N6  &kp SLASH        &none
+&none  &scrn4      &none         &none     &kp HOME       &kp END      &kp N0     &kp N1     &kp N2  &kp N3  &kp DOT          &none
+                                 &none     &none          &none        &kp RET    &kp EQUAL  &mo 3
             >;
 
             label = "NUM";
@@ -185,17 +185,6 @@
 &trans  &kp TILDE        &trans       &trans         &kp GRAVE             &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp COMMA  &kp PERIOD     &kp MINUS  &trans  &trans
                                       &trans         &trans                &kp LSHIFT              &trans                 &trans     &trans
             >;
-        };
-
-        SYM {
-            bindings = <
-&none  &kp EXCL   &kp AT     &kp HASH  &kp DLLR  &kp PRCNT       &kp SQT    &kp AMPS   &kp LPAR  &kp RPAR  &kp KP_MULTIPLY  &none
-&none  &kp GRAVE  &kp TILDE  &none     &scrn3    &scrn4          &kp MINUS  &kp EQUAL  &kp LBRC  &kp RBRC  &kp BSLH         &none
-&none  &kp TILDE  &none      &none     &none     &lock_mac       &kp UNDER  &kp PLUS   &kp LBKT  &kp RBKT  &kp PIPE         &none
-                             &kp TAB   &mo 0     &kp LEFT_GUI    &none      &none      &none
-            >;
-
-            label = "Symbols";
         };
 
         FUNC {
