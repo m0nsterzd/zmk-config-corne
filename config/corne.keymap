@@ -125,7 +125,15 @@
         vscode_terminal: vscode_terminal {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LCTRL>, <&macro_press>, <&kp GRAVE>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_press>,
+                <&kp GRAVE>,
+                <&macro_release>,
+                <&kp GRAVE>,
+                <&macro_release>,
+                <&kp LEFT_CONTROL>;
 
             label = "VSCODE_TERMINAL";
         };
