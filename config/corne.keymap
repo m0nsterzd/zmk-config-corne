@@ -125,15 +125,7 @@
         vscode_terminal: vscode_terminal {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LCTRL>,
-                <&macro_press>,
-                <&kp GRAVE>,
-                <&macro_release>,
-                <&kp GRAVE>,
-                <&macro_release>,
-                <&kp LCTRL>;
+            bindings = <&macro_press>, <&kp LCTRL>, <&macro_press>, <&kp GRAVE>;
 
             label = "VSCODE_TERMINAL";
         };
@@ -149,7 +141,7 @@
 
         vscode_term {
             bindings = <&vscode_terminal>;
-            key-positions = <0 5>;
+            key-positions = <5 4>;
         };
     };
 
@@ -158,9 +150,9 @@
 
         DEFAULT {
             bindings = <
-&none  &kp Q           &kp W  &kp F        &kp P             &kp B          &kp J      &kp L              &kp U           &kp Y    &kp SEMI  &none
-&none  &hm LEFT_GUI A  &kp R  &kp S        &hm LEFT_SHIFT T  &kp G          &kp M      &hm RIGHT_SHIFT N  &kp E           &kp I    &kp O     &none
-&none  &kp Z           &kp X  &kp C        &kp D             &kp V          &kp K      &kp H              &kp COMMA       &kp DOT  &kp FSLH  &none
+&none  &kp Q           &kp W  &kp F        &kp P             &kp B          &kp J      &kp L              &kp U            &kp Y    &kp SEMI  &none
+&none  &hm LEFT_GUI A  &kp R  &kp S        &hm LEFT_SHIFT T  &kp G          &kp M      &hm RIGHT_SHIFT N  &hm RIGHT_GUI E  &kp I    &kp O     &none
+&none  &kp Z           &kp X  &kp C        &kp D             &kp V          &kp K      &kp H              &kp COMMA        &kp DOT  &kp FSLH  &none
                               &mt ESC TAB  &kp BACKSPACE     &lt 1 SPACE    &lt 2 RET  &lt 3 DEL          &mt RALT GRAVE
             >;
 
