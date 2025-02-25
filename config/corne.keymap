@@ -180,19 +180,19 @@
 
         SYMBOLS {
             bindings = <
-&trans  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH       &kp NON_US_BACKSLASH  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp SLASH  &kp QUESTION   &kp PIPE   &trans  &trans
-&trans  &kp DOLLAR       &kp CARET    &kp AMPERSAND  &kp SQT               &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp COLON  &kp SEMICOLON  &kp EQUAL  &trans  &trans
-&trans  &kp TILDE        &trans       &trans         &kp GRAVE             &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp COMMA  &kp PERIOD     &kp MINUS  &trans  &trans
-                                      &trans         &trans                &kp LSHIFT              &trans                 &trans     &trans
+&none  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH       &kp NON_US_BACKSLASH  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp SLASH  &kp QUESTION   &kp PIPE   &none  &none
+&none  &kp DOLLAR       &kp CARET    &kp AMPERSAND  &kp SQT               &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp COLON  &kp SEMICOLON  &kp EQUAL  &none  &none
+&none  &kp TILDE        &none        &none          &kp GRAVE             &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp COMMA  &kp PERIOD     &kp MINUS  &none  &none
+                                     &none          &none                 &kp LSHIFT              &none                  &none      &none
             >;
         };
 
         FUNC {
             bindings = <
-&trans  &kp F1        &kp F2        &kp F3        &kp F4      &kp F5              &kp F6       &kp F7        &kp F8        &kp F9  &kp F10  &trans
-&trans  &none         &none         &kp C_PREV    &kp C_NEXT  &kp C_PLAY_PAUSE    &kp C_MUTE   &kp C_VOL_DN  &kp C_VOL_UP  &none   &kp F11  &trans
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_NXT  &bt BT_CLR          &none        &none         &none         &none   &kp F12  &trans
-                                    &sys_reset    &trans      &bootloader         &bootloader  &trans        &sys_reset
+&none  &kp F1        &kp F2        &kp F3        &kp F4      &kp F5              &kp F6       &kp F7        &kp F8        &kp F9  &kp F10  &none
+&none  &none         &none         &kp C_PREV    &kp C_NEXT  &kp C_PLAY_PAUSE    &kp C_MUTE   &kp C_VOL_DN  &kp C_VOL_UP  &none   &kp F11  &none
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_NXT  &bt BT_CLR          &none        &none         &none         &none   &kp F12  &none
+                                   &sys_reset    &none       &bootloader         &bootloader  &none         &sys_reset
             >;
 
             label = "Function";
