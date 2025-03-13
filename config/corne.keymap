@@ -15,7 +15,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
@@ -158,10 +158,10 @@
 
         DEFAULT {
             bindings = <
-&none  &kp Q  &kp W  &kp F               &kp P             &kp B          &kp J      &kp L              &kp U            &kp Y    &kp SEMI  &none
-&none  &kp A  &kp R  &hm LEFT_COMMAND S  &hm LEFT_SHIFT T  &kp G          &kp M      &hm RIGHT_SHIFT N  &hm RIGHT_GUI E  &kp I    &kp O     &none
-&none  &kp Z  &kp X  &kp C               &kp D             &kp V          &kp K      &kp H              &kp COMMA        &kp DOT  &kp FSLH  &none
-                     &kp ESC             &kp BACKSPACE     &lt 1 SPACE    &lt 2 RET  &lt 3 TAB          &lt 3 DELETE
+&none  &kp Q  &kp W               &kp F               &kp P             &kp B          &kp J      &kp L              &kp U            &kp Y                &kp SEMI  &none
+&none  &kp A  &hm LEFT_CONTROL R  &hm LEFT_COMMAND S  &hm LEFT_SHIFT T  &kp G          &kp M      &hm RIGHT_SHIFT N  &hm RIGHT_GUI E  &hm RIGHT_CONTROL I  &kp O     &none
+&none  &kp Z  &kp X               &kp C               &kp D             &kp V          &kp K      &kp H              &kp COMMA        &kp DOT              &kp FSLH  &none
+                                  &kp ESC             &kp BACKSPACE     &lt 1 SPACE    &lt 2 RET  &lt 3 TAB          &lt 3 DELETE
             >;
 
             label = "Colemak";
@@ -180,10 +180,10 @@
 
         SYMBOLS {
             bindings = <
-&none  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH                    &kp NON_US_BACKSLASH  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp SLASH  &kp QUESTION                 &kp PIPE   &none  &none
-&none  &kp DOLLAR       &kp CARET    &hm LEFT_COMMAND AMPERSAND  &kp SQT               &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp COLON  &hm RIGHT_COMMAND SEMICOLON  &kp EQUAL  &none  &none
-&none  &kp TILDE        &none        &none                       &kp GRAVE             &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp COMMA  &kp PERIOD                   &kp MINUS  &none  &none
-                                     &none                       &none                 &kp LSHIFT              &none                  &none      &none
+&none  &kp EXCLAMATION  &kp AT_SIGN             &kp HASH                    &kp NON_US_BACKSLASH  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp SLASH              &kp QUESTION                 &kp PIPE                 &none  &none
+&none  &kp DOLLAR       &hm LEFT_CONTROL CARET  &hm LEFT_COMMAND AMPERSAND  &hm LEFT_SHIFT SQT    &kp LEFT_BRACE          &kp RIGHT_BRACE        &hm RIGHT_SHIFT COLON  &hm RIGHT_COMMAND SEMICOLON  &hm RIGHT_CONTROL EQUAL  &none  &none
+&none  &kp TILDE        &none                   &none                       &kp GRAVE             &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp COMMA              &kp PERIOD                   &kp MINUS                &none  &none
+                                                &none                       &none                 &kp LSHIFT              &none                  &none                  &none
             >;
         };
 
